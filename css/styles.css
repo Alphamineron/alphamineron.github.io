@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css?family=Advent+Pro&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Michroma&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400");
+
+* {
+	box-sizing: border-box;
+	font-family: Raleway;
+	color: grey;
+}
+/* ================================================== */
+/* ================================================== */
+/* ================================================== */
+
+.container {
+	max-width: 900px;
+	margin: 0 auto;
+	padding: 0 1.5em;
+}
+
+.flexContainer {
+	display: flex;
+}
+
+.landingView {
+	position: relative;
+	min-height: 100vh;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+
+/* ================================================= */
+/* ================================================= */
+/* ================================================= */
+
+.mainHeader {
+	flex-shrink: 0;
+	position: sticky;
+	top: 0;
+
+	/* margin-bottom: 20%; */
+}
+
+.mainNav {
+	display: flex;
+	border-bottom: 1px solid rgba(255, 208, 0, 0.342);
+}
+
+.logo {
+	font-family: "Michroma", sans-serif;
+	font-size: 1rem;
+	font-weight: bold;
+	color: white;
+	padding: 0.7em 1.2em;
+	flex-grow: 1;
+}
+
+.options {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	max-width: 650px;
+}
+
+.nav li {
+	display: inline;
+}
+
+.nav.mainNav a {
+	display: inline-block;
+	color: rgb(255, 255, 255);
+	text-decoration: none;
+	font-weight: lighter;
+	font-size: 1rem;
+	padding: 0.5em 1em;
+}
+
+.nav.mainNav a:hover {
+	background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* ================================================= */
+
+.stage {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	flex-grow: 1;
+}
+
+.name {
+	font-family: "Michroma";
+	font-weight: normal;
+	font-size: 3rem;
+	color: white;
+
+	margin-bottom: 0.5em;
+}
+
+.description {
+	font-size: 0.8rem;
+	color: white;
+}
+
+.socialIcons {
+	margin: 2rem;
+	display: inline-block;
+	/* border-radius: 20px; */
+	/* background-color: white; */
+	/* padding: 5px; */
+}
+
+.socialIcons img {
+	width: 30px;
+	height: 30px;
+	margin: 0 10px;
+	cursor: pointer;
+}
+
+.socialIcons a {
+	text-decoration: none;
+}
+
+.lowerBar {
+	padding: 1rem;
+}
+
+/* ================================================= */
+/* ================================================= */
+/* ================================================= */
+
+#Projects {
+	background-color: green;
+	min-height: 50vh;
+}
+
+#About {
+	background-color: rgb(139, 2, 202);
+	min-height: 50vh;
+}
+
+#Blog {
+	background-color: aquamarine;
+	min-height: 50vh;
+}
+
+#Contact {
+	background-color: rgb(255, 236, 127);
+	min-height: 50vh;
+}

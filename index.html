@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Ankur Singh</title>
+        <meta name="description" content="You'll read this when you find this result in google search" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/styles.css" />
+        <link rel="stylesheet" href="css/opensource/background.css" />
+
+        <style>
+            /* .stage, .mainHeader, .lowerBar {
+                border: 2px solid white;
+            }
+            .name, .description, .socialIcons {
+                border: 2px solid rgb(255, 0, 0);
+            } */
+        </style>
+    </head>
+
+    <body>
+        <div class="landingView flexContainer">
+
+            <!-- =============== Credit: iAmNathanJ - https://codepen.io/iAmNathanJ/full/WbjWYN ================ -->
+            <div class="background">
+                <div class="canvas back"><canvas id="canvas-back"></canvas></div>
+                    
+                <div class="canvas mid"><canvas id="canvas-mid"></canvas></div>
+                    
+                <div class="canvas front"><canvas id="canvas-front"></canvas></div>     
+            </div>
+            <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+            <script src="js/opensource/background.js" async></script>
+            <!-- =============================================================================================== -->
+
+
+            <header class="mainHeader">
+
+                <nav class="nav mainNav">
+                    <span class="logo">Ankur Singh</span>
+                    <ul class="options">
+                        <li><a href="#">Projects</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact Me</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+
+
+            <div class="stage container">
+                <h1 class="name">Ankur Singh</h1>
+
+                <p class="description"  style="text-align: center;">
+                        Between the conception <br>
+                        And the creation <br>
+                        Between the emotion <br>
+                        And the response <br>
+                        Falls the Shadow <br>
+                </p>
+
+                <!-- <div class="socialIcons">
+                    <span><img src="/assets/github.svg"></span>
+                    <span><img src="/assets/youtube.svg"></span>
+                    <span><img src="/assets/twitter.svg"></span>
+                </div> -->
+
+                <div class="socialIcons">
+                    <span><a href="https://github.com/Alphamineron"><img src="/assets/github.png"></a></span>
+                    <span><a href="https://www.youtube.com/channel/UC2umgi0lRhF99340K14k1Dw"><img src="/assets/youtube.png"></a></span>
+                    <span><a href="https://twitter.com/AlphaMineron" target="_blank"><img src="/assets/twitter.png"></a></span>
+                </div>
+            </div>
+
+
+
+            <div class="lowerBar">
+            </div>
+
+        </div>
+
+        <div id="Projects" class="flexContainer"></div>
+        <div id="About" class="flexContainer"></div>
+        <div id="Blog" class="flexContainer"></div>
+        <footer id="Contact" class="mainFooter flexContainer"></footer>
+    </body>
+</html>
