@@ -30,9 +30,28 @@
 
       for (var i = 0; i < arcCount; i++) {
 
-        r = Math.floor(Math.random() * 255);
-        g = Math.floor(Math.random() * 255);
-        b = Math.floor(Math.random() * 255);
+        // r = Math.floor(Math.random() * 255);
+        // g = Math.floor(Math.random() * 255);
+        // b = Math.floor(Math.random() * 255);
+
+        // ==========================MY CODE========================================
+        // StarColors From http://www.vendian.org/mncharity/dir3/starcolor/
+        var Starcolors = [[255, 245, 210], 
+                          [155, 176, 255], 
+                          [255, 204, 111], 
+                          [255, 210, 161], 
+                          [248, 247, 255], 
+                          [202, 215, 255], 
+                          [170, 191, 255], 
+                          [073, 214, 255], 
+                          [000, 255, 236]];
+
+        var rgb = Starcolors[Math.floor(Math.random() * Starcolors.length)];
+        r = rgb[0];
+        g = rgb[1];
+        b = rgb[2];
+        // =========================================================================
+
         a = Math.round(Math.random() * alpha) / 100;
 
         color = 'rgba(' + r + ', ' + g + ', ' + b + ', ' + a + ')';
@@ -67,10 +86,10 @@
             positionBackground($('div.canvas.mid'), 2, mouseX, mouseY);
             positionBackground($('div.canvas.front'), 4, mouseX, mouseY);
           }
-          console.log("True");
+          // console.log("True");
       });
 
-      console.log(landingView);
+      // console.log(landingView);
       // =========================================================================
     }
 
